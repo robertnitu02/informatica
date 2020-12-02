@@ -1,0 +1,11 @@
+s = "A realizat tot" -> strlen = 14
+
+i = 13 ; 13 >= 0; i--
+	O -> O
+	a -> A
+	i -> I
+	a -> A
+	e -> E
+
+
+OAIAE

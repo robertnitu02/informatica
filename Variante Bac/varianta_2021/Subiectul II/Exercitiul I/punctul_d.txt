@@ -1,0 +1,16 @@
+cite?te n, k
+p <- 1
+
+daca k = 0 atuncti
+	nr <- -1
+altfel
+	nr <- 0
+	
+cât timp n <> 0 ?i k <> 0 executa..
+	c <- n % 2; n <- [n / 10]
+	daca c <> 0 atunci
+		nr <- nr + (n % 10) * p; p <- p * 10
+	altfel 
+		k <- k - 1
+..
+scrie nr

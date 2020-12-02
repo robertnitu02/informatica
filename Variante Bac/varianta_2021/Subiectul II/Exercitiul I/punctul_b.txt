@@ -1,0 +1,6 @@
+Algortimul extrage primele K cifre impare
+deci, pe premiza aceasta, valorile pentru care K = 2
+afiseaza numarul 20 sunt:
+	2103
+	2507
+	2709
