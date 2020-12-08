@@ -1,0 +1,17 @@
+1) d)
+2) a) 7
+   b) 131, 133, 135, 137, 139
+      311, 313, 315, 317, 319
+      231, 321 
+      12 
+   c) 
+        citește n 
+        max <- 0 
+        cât timp n <> 0 __
+            n <- [n/10]
+            dacă max < n%10  atunci __
+                max <- n % 10
+            __ 
+        __
+        scrie max
+    d) vezi main.cpp din directorul Subiectul I

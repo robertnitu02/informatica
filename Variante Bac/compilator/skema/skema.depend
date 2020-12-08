@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1607447428 source:c:\users\nitur\desktop\bac\informatica\variante bac\compilator\skema\main.cpp
+	<iostream>
+	<math.h>
+	<fstream>
+
