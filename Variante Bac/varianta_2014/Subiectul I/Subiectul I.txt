@@ -1,0 +1,67 @@
+1. c)
+2. 2_7_1
+
+a) n = 2352, d = 2
+
+I d <= n (A)
+    p = 0
+    I n % d == 0 (A)
+        p = 1
+        n = 1176
+    II n % d == 0 (A)
+        p = 2
+        n = 588
+    III n % d == 0 (A)
+        p = 3
+        n = 294
+    III n % d == 0 (A)
+        p = 4
+        n = 147
+    IV n % d == 0 (F)
+    p % 2 == 0 si p <> 0 (A)
+        2_
+    d = 3
+
+II d <= n (A)
+    p = 0
+    I n % d == 0 (A)
+        p = 1
+        n = 49
+    p % 2 == 0 si <> (F)
+    d = 4
+
+III d <= n (A)
+    p = 0
+    I n % d == 0 (F)
+    p % 2 == 0 si <> (F)
+    d = 5
+
+IV d <= n (A)
+    p = 0
+    I n % d == 0 (F)
+    p % 2 == 0 si <> (F) 
+    d = 6
+
+V d <= n (A)
+    p = 0
+    I n % d == 0 (F)
+    p % 2 == 0 si <> (F)
+    d = 7
+
+VI d <= n (A)
+    p = 0
+    I n % d == 0 (A)
+        p = 1
+        n = 7
+    I n % d == 0 (A)
+        p = 2
+        n = 1
+    p % 2 == 0 si <> (A)
+        7_
+    d = 8
+
+VII d <= n (F)
+
+b) 50, 
+
+c) pentru (i <- d, n) executa..
