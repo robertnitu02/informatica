@@ -1,0 +1,26 @@
+1. b)
+
+f(15) -> f(13) - 1 = 7
+f(13) -> f(11) - 1 = 8
+f(11) -> f(9) - 1 = 9
+f(9)  -> f(10) + 3 = 10
+f(10) -> 7
+
+2. 
+rosu roz violet albastru
+rosu albastru galben roz
+
+rosu   galben   roz   albastru   violet
+0      1        2     3          4
+
+primele 5:
+0213
+0214
+0231
+0234
+0241
+0243
+0312
+
+3. 
+

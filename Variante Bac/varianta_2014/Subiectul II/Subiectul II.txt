@@ -1,0 +1,32 @@
+1. c)
+
+    G.Intern  G.Extern
+1   0         2
+2   0         0
+3   2         2
+4   0         2
+5   3         0
+6   0         4
+7   5         0
+8   2         2
+
+2. d)
+
+s = "1b2d3"
+s[2] = 'a' + 2 = 'c'
+s = "1bcd3"
+s = bcd3 <- strcpy(s, s + 1)
+s = bcd  <- strcpy(s + 3, s + 4)
+
+3. 
+
+if (start.minut == stop.minut && start.secunda == stop.secunda) 
+{
+    cout << "acceptat";
+}
+else 
+{
+    cout << "respins";
+}
+
+4. 2, 5, 8
