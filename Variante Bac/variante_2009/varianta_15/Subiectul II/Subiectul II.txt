@@ -1,0 +1,53 @@
+1. b)
+
+3. 9_bbammeutt
+
+i = 0
+s = "abaemeiut" => 9 strlen
+
+0 < 9 (A)
+    a - vocala
+        bbaemeiut
+        i = 1
+    
+1 < 9 (A)
+    b - consoana
+    i = 3
+
+3 < 9 (A)
+    e - vocala  
+        bbammeiut
+        i = 4
+    
+4 < 9 (A)
+    m - consoana
+    i = 6
+
+6 < 9 (A)
+    i - vocala
+        bbammeuut
+        i = 7
+
+7 < 9 (A)
+    u - vocala
+        bbammeutt
+        i = 8
+    
+8 < 9 (A)
+    t - consoana
+    i = 10
+
+10 < 9 (F)
+
+4. grad minim 2, noduri cu grad minim: 5, 7 si 8
+
+1   3
+2   3
+3   3
+4   3
+5   2
+6   4
+7   2
+8   2
+
+5. 
