@@ -1,0 +1,130 @@
+1. 
+
+a) 12
+
+a = 5
+b = 19
+k = 4
+y = 12
+pm = 1
+i = 10
+
+I i >= a : 19 >= 5 (A)
+    x = 19
+    p = 0
+    I x%k=0 [19%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [0!=0 (F) si (0 < 0 sau 0 = 0 (A) )] (F)
+    i = 18
+
+II i >= a : 18 >= 5 (A)
+    x = 18
+    p = 0
+    I x%k=0 [18%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [0!=0 (F) si (0 < 0 (F) sau 0 = 0 (A) )] (F)
+    i = 17
+
+III i >= a : 17 >= 5 (A)
+    x = 17
+    p = 0
+    I x%k=0 (17%4=0) (F)
+    p!=0 si (p < pm sau pm = 0) [0!=0 (F) si (0 < 0 (F) sau 0 = 0 (A) )] (F)
+    i = 16
+
+IV i >= a : 16 >= 5 (A)
+    x = 16
+    p = 0
+    I x%k=0 [16%4=0] (A)
+        x = 4
+        p = 1
+    II x%k=0 [4%4=0] (A)
+        x = 0
+        p = 2
+    p!=0 si (p < pm sau pm = 0) [2!=0 (A) si (2<0 (F) sau 0 = 0 (A) )] (A)
+        pm = 2
+        y = 16
+    i = 15
+
+V i >= a : 15 >= 5 (A)
+    x = 15
+    p = 0
+    I x%k=0 [15%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [0!=0 (F) si (0<2 (A) sau 0 = 0 (A) )] (F)
+    i = 14
+
+VI i >= a : 14 >= 5 (A)
+    x = 14
+    p = 0
+    I x%k=0 [14%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [0!=0 (F) si (0<2 (A) sau 0 = 0 (A) )] (F)
+    i = 13
+
+VII i >= a : 13 >= 5 (A)
+    x = 13
+    p = 0
+    I x%k=0 [13%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [0!=0 (F) si (0<2 (A) sau 0 = 0 (A) )] (F)
+    i = 12
+
+VIII i >= a : 12 >= 5 (A)
+    x = 12
+    p = 0
+    I x%k=0 [12%4=0] (A)
+        x = 3
+        p = 1
+    II x%k=0 [3%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [1!=0 (A) si (1 < 2 (A) sau 2 = 0 (F))] (A)
+        pm = 1
+        y = 12
+    i = 11
+
+IX i >= a : 11 >= 5 (A)
+    x = 11
+    p = 0
+    I x%k=0 [11%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [0!=0 (F) si (0<1 (A) sau 0 = 0 (A) )] (F)
+    i = 10
+
+X i >= a : 10 >= 5 (A)
+    x = 10
+    p = 0
+    I x%k=0 [10%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [0!=0 (F) si (0<1 (A) sau 0 = 0 (A) )] (F)
+    i = 9
+
+XI i >= a : 9 >= 5 (A)
+    x = 9
+    p = 0
+    I x%k=0 [9%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [0!=0 (F) si (0<1 (A) sau 0 = 0 (A) )] (F)
+    i = 8
+
+XII i >= a : 8 >= 5 (A)
+    x = 8
+    p = 0
+    I x%k=0 [8%4=0] (A)
+        x = 2
+        p = 1
+    II x%k=0 [2%4=0] (F)
+    p!=0 si (p < pm sau pm = 0) [1!=0 (A) si (1<1 (F) sau 1=0 (F))] (F)
+    i = 7
+
+..
+
+y = 12
+
+b) 2019
+
+a = 2019
+b = 2019
+k = 5
+
+a -> val minim. pentru care y = 0
+
+d) pentru i<-b, 
+
+2. 
+
+struct eveniment {
+    char[10] luna;
+    int zi, id;
+} e;
