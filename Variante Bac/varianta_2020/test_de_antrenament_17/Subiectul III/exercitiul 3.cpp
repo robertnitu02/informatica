@@ -33,6 +33,7 @@ int main() {
             contor++;
         in >> a >> b;
     }
+    in.close();
     cout << contor;
     return 0;
 }

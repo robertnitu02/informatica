@@ -2,7 +2,7 @@
 1614322742 source:c:\users\luci\desktop\github repos\informatica\compilator\main.cpp
 	<iostream>
 
-1614868728 source:c:\users\nitur\desktop\git\informatica\compilator\main.cpp
+1614887246 source:c:\users\nitur\desktop\git\informatica\compilator\main.cpp
 	<iostream>
-	<string.h>
+	<fstream>
 
