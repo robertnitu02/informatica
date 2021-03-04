@@ -12,4 +12,19 @@ f(4) -> 4>1 (A); x = 3; f(2)  0
 f(2) -> 2>1 (A); x = 1; f(0)  0
 f(0) -> 0                     0
 
-3. 
+3. c)
+
+Bono Bruce Springsteen Bon Jovi Leonard Cohen Portugal.TheMan
+0    1                 2        3             4
+
+
+pe pozitii alaturate sa nu fie 0 2 4
+
+primele 5:
+0101
+0103
+0110
+0111
+0112
+
+4. d)
