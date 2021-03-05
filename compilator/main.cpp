@@ -5,34 +5,26 @@ using namespace std;
 
 ifstream in("bac.txt");
 
-bool apartineInterval(int n, int a, int b) {
-    if(a <= n && n <= b)
-        return true;
-    return false;
-}
-
-bool nuSeGasesteInInterval(int v[], int n, int a, int b) {
-    int contor = 0;
-    for(int i = 1; i <= n; i++) {
-        if(!apartineInterval(v[i], a, b))
-            contor++;
-    }
-    return (contor == n);
+bool multipluDeZece(unsigned int n) {
+    return (n % 10 == 0);
 }
 
 int main() {
-    int n, v[100], contor = 0;
+    bool inceput = false;
+    int _10secventa = 0, contor = 0;
+    int n;
     in >> n;
-    for(int i = 1; i <= n; i++)
-        in >> v[i];
-
-    int a, b;
-    in >> a >> b;
     while (!in.eof()) {
-        if(nuSeGasesteInInterval(v, n, a, b))
-            contor++;
-        in >> a >> b;
+        if (multipluDeZece(n)) {
+            if (!inceput)
+                inceput = true;
+            if(inceput) {
+
+            }
+        } else {
+            inceput = false;
+        }
+        in >> n;
     }
-    cout << contor;
     return 0;
 }
