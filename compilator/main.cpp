@@ -1,30 +1,18 @@
 #include <iostream>
-#include <fstream>
+#include <string.h>
 
 using namespace std;
 
-ifstream in("bac.txt");
-
-bool multipluDeZece(unsigned int n) {
-    return (n % 10 == 0);
-}
-
 int main() {
-    bool inceput = false;
-    int _10secventa = 0, contor = 0;
-    int n;
-    in >> n;
-    while (!in.eof()) {
-        if (multipluDeZece(n)) {
-            if (!inceput)
-                inceput = true;
-            if(inceput) {
-
-            }
-        } else {
-            inceput = false;
+    char s[20];
+    strcpy(s, "informatie");
+    int n = strlen(s) - 1;
+    for(int i = 0; i < n / 2; i++) {
+        if(strchr("aeiou", s[i]) != NULL && strchr("aeiou", s[n-i])!= NULL) {
+            s[i] = s[i+1];
+            s[n-i] = s[n-i-1];
         }
-        in >> n;
     }
+    cout << s;
     return 0;
 }

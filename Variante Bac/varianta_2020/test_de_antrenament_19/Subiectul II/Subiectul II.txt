@@ -1,0 +1,88 @@
+1.
+
+a) 484866
+
+n = 60534 | 6053 | 605 | 60 | 6 | 0
+c = 0 | 4 | 3 | 5 | 0 | 6
+
+I n != 0 [60534 != 0] (A)
+    c = n % 10 = 4
+    n = n / 10 = 6053
+    c%2!=0 [4%2 != 0] (F)
+    I1 c > 0 && c < 10 [4 > 0 && 4 < 10] (A)
+        4
+        c = 8
+    I2 c > 0 && c < 10 [8 > 0 && 8 < 10] (A)
+        8
+        c = 16
+    I3 c > 0 && c < 10 [16 > 0 && 16 < 10] (F)
+
+II n != 0 [6053 != 0] (A) 
+    c = n % 10 = 3
+    n = n / 10 = 605
+    c%2!=0 [3%2 != 0] (A)
+        c = 4
+    I1 c > 0 && c < 10 [4 > 0 && 4 < 10] (A)
+        4
+        c = 8
+    I2 c > 0 && c < 10 [8 > 0 && 8 < 10] (A)
+        8
+        c = 16
+    I3 c > 0 && c < 10 [16 > 0 && 16 < 10] (F)
+
+III n != 0 [605 != 0] (A) 
+    c = n % 10 = 5
+    n = n / 10 = 60
+    c%2!=0 [5%2!=0] (A)
+        c = 6
+    I1 c > 0 && c < 10 [6 > 0 && 6 < 10] (A)
+        6
+        c = 12
+    I2 c > 0 && c < 10 [12 > 0 && 12 < 10] (F)
+
+IV n != 0 [60 != 0] 
+    c = n % 10 = 0
+    n = n / 10 = 6
+    c%2!=0 [0%2!=0] (F)
+    I1 c > 0 && c < 10 [0 > 0 && 0 < 0] (F)
+
+V n != 0 [6 != 0]
+    c = n % 10 = 6
+    n = n / 10 = 0
+    c%2!=0 [6%2!=0] (F)
+    I1 c > 0 && c < 10 [6 > 0 && 6 < 10]
+        6
+        c = 12
+    I2 c > 0 && c < 10 [12 > 0 && 12 < 10] (F)
+
+b) 88, 77, 87
+
+d) 
+
+executa .. pana cand n == 0
+
+
+2.
+
+struct proiect {
+    char tema[20];
+    int nrSurse;
+    char denAdrSursa[20][10];
+} p;
+
+3. nnformatii
+
+s = "nnformatii"
+n = strlen(s) - 1 = 10 - 1 = 9
+
+i = 0; i < 4; i++
+    if(strchr("aeiou", "i") != null && strchr("aeiou", e) != null)
+
+i = 1; i < 4; i++
+    if(strchr("aeiou", "n") != null && strchr("aeiou", e) != null)
+
+i = 2; i < 4; i++
+    if(strchr("aeiou", f) != null)
+
+i = 3; i < 4; i++
+    if(strchr("aeiou", o) != null && strchr("aeiou", r)!=null)
