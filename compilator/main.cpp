@@ -1,18 +1,28 @@
 #include <iostream>
-#include <string.h>
 
 using namespace std;
 
 int main() {
-    char s[20];
-    strcpy(s, "informatie");
-    int n = strlen(s) - 1;
-    for(int i = 0; i < n / 2; i++) {
-        if(strchr("aeiou", s[i]) != NULL && strchr("aeiou", s[n-i])!= NULL) {
-            s[i] = s[i+1];
-            s[n-i] = s[n-i-1];
+    unsigned int n;
+    int x, m, p, cn;
+
+    cin >> n;
+    x = 0;
+    m = 0;
+    p = 1;
+
+    while(x < 10) {
+        cn = n;
+        while(cn != 0) {
+            int c = cn % 10;
+            cn = cn / 10;
+            if(c == x) {
+                m = c * p + m;
+                p = p * 10;
+            }
         }
+        x += 2;
     }
-    cout << s;
+    cout << m;
     return 0;
 }
