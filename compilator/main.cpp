@@ -1,19 +1,28 @@
 #include <iostream>
-#include <string.h>
+#include <fstream>
 
 using namespace std;
 
+ifstream in("bac.txt");
 
 int main() {
-    char s[50];
-    strcpy(s, "informatica");
+    int n, nr[100];
 
-    cout << strlen(s);
+    in >> n;
+    in >> nr[1];
 
-    for(int i = 0; i < strlen(s); i++)
-            if(strchr("aeiou", s[i]) != NULL)
-                s[i] = '*';
+    for(int i = 2; i <= n; i++)
+        in >> nr[i];
+    in.close();
 
-    cout << s;
+    cout << nr[1] << ' ';
+    for(int i = 2; i <= n; i++) {
+        int maxim = 0;
+        for(int j = 1; j <= i; j++) {
+            if (nr[j] > maxim)
+                maxim = nr[j];
+        }
+        cout << maxim << ' ';
+    }
     return 0;
 }
