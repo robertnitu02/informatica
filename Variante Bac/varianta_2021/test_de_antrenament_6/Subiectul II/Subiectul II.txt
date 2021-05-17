@@ -1,0 +1,152 @@
+1. 
+
+a) 7
+
+x = 404
+y = 413
+k = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+i = 404 | 405 | 406 | 407 | 408 | 409 | 410 | 411 | 412 .. 413
+
+I i <= y [404 <= 413] (A)
+    n = 404
+    c = 0
+    i n > 0 & c = 0 [404 > 0 & c = 0] (A)
+        n % 2 = 1 [404 % 2 = 1] (F)
+        n = 40
+    ii n > 0 & c = 0 [40 > 0 & c = 0] (A)
+        n % 2 = 1 [40 % 2 = 1] (F)
+        n = 4
+    iii n > 0 & c = 0 [4 > 0 & c = 0] (A)
+        n % 2 = 1 [4 % 2 = 1 ] (F)
+    k = 0
+    i = 405
+
+II i <= y [405 <= 413] (A)
+    n = 405
+    c = 0
+    i n > 0 & c = 0 [405 > 0 & c = 0] (A)
+        n % 2 = 1 [405 % 2 = 1] (A)
+            c = 1
+        n = 40
+    ii n > 0 & c = 0 [40 > 0 & c = 0] (F)
+    k = 1
+    i = 406
+
+III i <= y [406 <= 413]
+    n = 406
+    c = 0
+    i n > 0 & c = 0 [406 > 0 & c = 0] (A)
+        n % 2 = 1 [404 % 2 = 1] (F)
+        n = 40
+    ii n > 0 & c = 0 [40 > 0 & c = 0] (A)
+        n % 2 = 1 [40 % 2 = 1] (F)
+        n = 4
+    iii n > 0 & c = 0 [4 > 0 & c = 0] (A)
+        n % 2 = 1 [4 % 2 = 1 ] (F)
+    k = 1
+    i = 407
+
+IV i <= y [407 <= 413]
+    n = 407
+    c = 0
+    i n > 0 & c = 0 [407 > 0 & c = 0] (A)
+        n % 2 = 1 [407 % 2 = 1] (A)
+            c = 1
+        n = 40
+    ii * iii - n = 0
+    k = 2
+    i = 408
+
+..
+
+
+b) y = 61 | y = 62
+
+x = 58, y (2 nr) sa se afiseze val 3.
+
+d) 
+
+    pentru j <- i, y executa ..
+        n <- j
+        c <- 0
+        cat timp n > 0 si c = 0 executa ..
+            daca n%2=1 atunci c <- 1
+            n <- [n / 10]
+        k <- k + c
+    
+    scrie k
+
+2.
+
+struct figura {
+    struct coordonate {
+        float x, y;
+    } centru;
+    int diametru;
+} c;
+
+3. 18
+
+s = PRASLEA*CEL*VOINIC
+    
+i = 0, i < 18
+    strchr("ACEI", P) 
+    i = 1
+
+i = 1, i < 18
+    strchr("ACEI", R)
+    i = 2
+
+i = 2, i < 18
+    strchr("ACEI", A) 
+        t = LEA*CEL*VOINIC
+        s = PRLEA*CEL*VOINIC
+
+i = 2, i < 18
+    strchr("ACEI", L)
+    i = 3
+
+i = 3, i < 18
+    strchr("ACEI", E)
+        t = *CEL*VOINIC
+        s = PRL*CEL*VOINIC
+    
+i = 3, i < 18
+    strchr("ACEI", *)
+    i = 4
+
+i = 4, i < 18
+    strchr("ACEI", C)
+        t = EL*VOINIC
+        s = PRL*EL*VOINIC
+
+i = 4, i < 18
+    strchr("ACEI", E)
+        t = L*VOINIC
+        s =  PRL*L*VOINIC
+
+i = 4, i < 18
+    strchr("ACEI", L)
+    i = 5
+
+i = 5, i < 18
+    strchr("ACEI", *)
+    i = 6
+
+i = 6, i < 18
+    strchr("ACEI", V)
+    i = 7
+
+i = 7, i < 18
+    strchr("ACEI", O)
+    i = 8
+
+i = 8, i < 18
+    strchr("ACEI", I)
+        t = IC
+        s = PRL*L*VOIC
+
+i = 8, i < 18
+    strchr("ACEI", I)
+        t = C
+        s = PRL*L*VOC
