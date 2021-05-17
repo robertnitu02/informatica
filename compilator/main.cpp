@@ -1,24 +1,19 @@
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
 
 int main() {
-    int x, y;
+    char s[50];
+    strcpy(s, "informatica");
 
-    cin >> x;
-    y = 0;
+    cout << strlen(s);
 
-    do {
-        if(x > 9) {
-            do {
-                x /= 10;
-            }while(x >= 9);
-        }
-        y = y * 10 + x;
-        cin >> x;
-    }while(x != 0);
+    for(int i = 0; i < strlen(s); i++)
+            if(strchr("aeiou", s[i]) != NULL)
+                s[i] = '*';
 
-    cout << y;
+    cout << s;
     return 0;
 }
