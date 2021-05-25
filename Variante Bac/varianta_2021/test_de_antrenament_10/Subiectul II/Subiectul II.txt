@@ -1,0 +1,102 @@
+1.
+
+a) 'ABABABAB'
+
+x = 2 | 9
+y = 9 | 2
+
+x < y [2 < 9] (A)
+    x = -7
+    y = 2
+    x = 9
+
+I x >= y [9 >= 2] (A)
+    'A'
+    x = 7
+    x % 2 = 0 [7 % 2 == 0] (F)
+        'B'
+
+II x >= y [7 >= 2] (A)
+    'A'
+    x = 5
+    x % 2 = 0 [5 % 2 == 0] (F)
+        'B'
+    
+III x >= y [5 >= 2] (A)
+    'A'
+    x = 3
+    x % 2 = 0 [3 % 2 == 0] (F)
+        'B'
+
+IV x >= y [3 >= 2] (A)
+    'A'
+    x = 1
+    x % 2 == 0 [3 % 2 == 0] (F)
+        'B'
+
+V x >= y [1 >= 2] (F)
+
+b) 18, 19
+
+x = 3
+
+y sa apartina [1, 20] -> sa se afiseze 12
+
+y = 18, 19
+
+{ 
+    x = 18
+    y = 3
+
+    0) x = 15  [AB]
+    1) x = 12  [AA]
+    2) x = 9   [AB]
+    3) x = 6   [AA]
+    4) x = 3   [AB]
+    5) x = 1   [AB]
+}
+
+{
+    x = 19
+    y = 3
+
+    0) x = 16 [AA]
+    1) x = 13 [AB]
+    2) x = 10 [AA]
+    3) x = 7  [AB]
+    4) x = 4  [AA]
+    5) x = 1  [AB]
+}
+
+d) 
+
+executa ..
+    scrie A 
+    [..]
+.. pana cand x <= y
+
+2. 
+
+struct elev {
+    int cod;
+    double nota1, nota2;
+} y;
+
+3. 
+
+pom
+verde
+
+s = "pomverde"
+     01234567
+
+s[3] = s[0] = v 
+s[5] = s[2] = r
+s[0] = s[1] + 1 = p
+s[2] = s[1] - 2 = m 
+s[6] = s[4] - 1 = d
+
+t = "pom00000"
+     01234567
+
+t[3] = '\0'
