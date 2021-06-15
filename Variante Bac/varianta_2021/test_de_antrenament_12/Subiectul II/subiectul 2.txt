@@ -1,0 +1,60 @@
+1.
+
+a) 2_2_4_4_9_
+
+n = 5 |
+k = 2 |
+t = 1 | 2 | 3
+
+I i = 1, i <= n / k [1 <= 2] (A)
+    I j = 1, j <= k [1 <= 2] (A)
+        2*t_  [2_]
+    II j = 2, j <= k [2 <= 2] (A) 
+        2*t_  [2_]
+    t = 2
+
+II i = 2, i <= n / k [2 <= 2] (A)
+    I j = 1, j <= k [1 <= 2] (A)
+        2*t_  [4_]
+    II j = 2, j <= k [2 <= 2] (A)
+        2*t_  [4_]
+    t = 3
+
+III i = 3, i <= n / k [3 <= 2] (F)
+
+
+I i = n % k, i >= 1 [1 >= 1] (A)
+    3*t_  [9_]
+II i = n % k, i >= 1 [0 >= 1] (F)
+
+a)
+
+n = 25 (cea mai mica)
+n = 29 (cea mai mare)
+
+n apartine [1, 30]
+k = 6
+
+n / 6 = 4 -> n = 25 (cea mai mica)
+             n = 29 (cea mai mare)
+
+i = 1, i <= 4
+    t = 4
+
+d) 
+
+cat timp n % k <> 0 executa ..
+
+..
+
+2. 
+
+lant elementar: 1 - 2 - 4 - 5 - 6 
+ciclu neelementar: 2 - 4 - 5 - 3 - 6 - 2 - 1
+
+3. 
+
+if(!strchr("AEIOU", s[i]) || strchr("EI", s[i]))
+    cout << s[i];
+else 
+    cout << '*'
