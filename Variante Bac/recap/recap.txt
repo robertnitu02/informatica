@@ -1,0 +1,142 @@
+S1.
+
+1. d) trebuie convertite la tipul float
+
+3 + 5.0 / 2 + 2
+
+5.0 / 2 = 2.5
++ 2 = 4.5 + 3 = 7.5
+
+2. b)
+
+a) 
+
+i = 0
+v = {-1, 1, 0, 2}
+
+f(0, v) -> 0 >= 3 (F) -> f(1, v)  -1 [F]
+
+b) 
+
+i = 0
+v = {0, 2, 0, 1}
+
+f(1, v) -> 0 >= 3 (F) -> f(1, v)  0
+f(1, v) -> 1 >= 3 (F) -> f(2, v)  2
+f(2, v) -> 2 >= 3 (F) -> f(3, v)  0
+f(3, v) -> 3 >= 3 (A) -> v[3] = 1 + 1 = 2 
+
+=> 2020
+
+3. c) 
+
+70 60 40 30
+70 60 50 20
+80 50 40 30
+80 60 40 20
+
+80 60 50 10
+80 70 30 20
+
+4. c) cinci noduri
+
+5. a)
+
+
+S2. 
+
+1. 
+
+
+a) 
+
+1 1 1 0 0
+
+a = 240107
+c = 0
+
+I 
+    b = 240107
+    x = 0
+        Ii 
+            b % 10 = c [7 = 0] (F)
+            b = 24010
+        Iii 
+            b % 10 = c [0 = 0] (A)
+                x = 1
+        Iiii F (x = 1)
+    1
+    c = 2
+
+II
+    b = 240107
+    x = 0
+        IIi
+            b % 10 = c [7 = 2] (F)
+            b = 24010
+        IIii
+            ..
+            x = 1
+    1
+    c = 4
+
+III
+    b = 240107
+    x = 0
+        IIIi 
+            b % 10 = c [7 = 4] (F)
+            b = 24010
+        IIIii
+            ..
+            x = 1
+    1
+    c = 6
+
+IV 
+    b = 240107
+        IVi 
+            b % 10 = c [7 = 6] (F)
+            b = 0
+    0
+    c = 8
+
+V 
+    b = 240107
+        Vi
+            b % 10 = c [7 = 8] (F)
+    0
+    c = 10
+10 > 9 (A) => se iese din executie
+
+b) 
+
+[10 ^ 5, 10 ^ 6] 
+
+10 ^ 5 = 100.000   }   [100.000, 1.000.000]
+10 ^ 6 = 1.000.000 }
+
+102.468 -> cel mai mic
+986.420 -> cel mai mare
+
+d) 
+
+executa cat timp b != 0 ^ x != 1
+
+2. 
+
+struct calculator {
+    char monitor;
+    struct m {
+        unsigned int interna;
+        unsigned int externa;
+    } memorie;
+} c;
+
+3. 
+
+for(i = 0; i < 9; i++)
+    for(j = 0, j < 9; j++) 
+        if(i > j && i + j > 8)
+            a[i][j] = '<';
+        else 
+            a[i][j] = '>';
